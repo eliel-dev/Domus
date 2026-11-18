@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Domus — Controle de Despesas Compartilhadas</title>
+    <meta
+      name="description"
+      content="Gerenciador financeiro colaborativo para famílias e casas compartilhadas com perfis, parcelamentos e relatórios."
+    />
+    <meta property="og:title" content="Domus — Controle de Despesas Compartilhadas" />
+    <meta
+      property="og:description"
+      content="Organize gastos mensais, parcelas e quitações da família com clareza."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('casaconta_theme_v1');
+          if (t !== 'light') document.documentElement.classList.add('dark');
+        } catch (e) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F6F7F9] text-zinc-900 dark:bg-[#08090C] dark:text-zinc-100 antialiased selection:bg-red-500/20 selection:text-red-950 dark:selection:bg-red-500/30 dark:selection:text-white transition-colors">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
